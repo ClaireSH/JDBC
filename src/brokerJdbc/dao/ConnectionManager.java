@@ -3,8 +3,8 @@ package brokerJdbc.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-//1singleton 으로 만들거임. 클래스의 객체가 하나만 만들어지도록 하는 것.
+//TODO: 싱글턴 모델 공부
+//singleton 으로 만들거임. 클래스의 객체가 하나만 만들어지도록 하는 것.
 //이 클래스를 외부에서는 생성하지 못하도록 해줘야 함. 
 public class ConnectionManager {
 	//utility 클래스
@@ -45,7 +45,6 @@ public class ConnectionManager {
 		try {
 			if(con != null) con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -32,6 +32,10 @@ public class Customer implements Serializable {
 		public void setAddress(String address) {
 			this.address = address;
 		}
+		@Override
+		public String toString() {
+			return "Customer [ssn=" + ssn + ", cust_name=" + cust_name + ", address=" + address + "]";
+		}
 		
 	
 }
